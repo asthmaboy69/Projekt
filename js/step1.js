@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a><strong>Sofortige Verbesserung:</strong> Schon nach 20 Minuten ohne Zigarette normalisieren sich Puls und Blutdruck.</a>
                 <a><strong>Langfristige Gesundheit:</strong> Das Risiko von Herzinfarkten, Schlaganf&aumlllen und Krebserkrankungen wird erheblich reduziert.</a>
                 <a><strong>Kosteneinsparungen:</strong> Rauchstopp bedeutet erhebliche Einsparungen in Ihrem Budget.</a>
-                <a href="https://251067-4.web.fhgr.ch/step2" class="round-button">Weiter</a>
+                <a href="https://251067-4.web.fhgr.ch/step2.html" class="round-button">Weiter</a>
                 </div>
             `;
             document.body.appendChild(factDiv);

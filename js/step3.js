@@ -31,7 +31,7 @@ cigarette.addEventListener('click', function() {
     } else {
         // Nach 8 Klicks unterhalb der .cigarette das HTML-Element einfügen
         const continueButton = document.createElement('a');
-        continueButton.href = 'https://251067-4.web.fhgr.ch/finishline';
+        continueButton.href = 'https://251067-4.web.fhgr.ch/finishline.html';
         continueButton.className = 'round-button';
         continueButton.textContent = 'Weiter';
         
