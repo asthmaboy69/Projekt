@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("commonHead.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/cssssssssssssssssssssss.css">
+
+</head>
+
+<body>
+
+<header class="global-header">
+    <a href="linklinklinklinklinklinklinklinklink" class="back-link">Zur&uumlck</a>
+</header>
+
+<h1>content here</h1>
+
+<a href="https://251067-4.web.fhgr.ch/step2" class="round-button">Weiter</a>
+
+</body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("commonHead.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+                });
+
+
+        });
+    </script>
+    <link rel="stylesheet" href="css/start.css">
+    
+
+</head>
+
+
+<body>
+
+    <header class="global-header">
+        <a href="https://251067-4.web.fhgr.ch/" class="back-link">Zur&uumlck</a>
+    </header>
+
+    <div class="chart">
+        <div class="bar eight">
+            <i><strong>Raucherzahlen weltweit:</strong> Laut der Weltgesundheitsorganisation (WHO) gibt es weltweit mehr als <span class="highlight">1 Milliarde</span> Raucher.</i>
+        </div>
+        <div class="bar seven">
+            <i><strong>Gesundheitsrisiken:</strong> Rauchen ist f&aumlr etwa <span class="highlight">7 Millionen Todesf&aumllle</span> pro Jahr verantwortlich.</i>
+        </div>
+        <div class="bar six">
+            <i><strong>Jugendlicher Raucher:</strong> Der Beginn des Rauchens im Jugendalter erh&oumlht das Risiko einer lebenslangen <span class="highlight">Abh&aumlngigkeit</span> erheblich.
+            </i>
+        </div>
+        <div class="bar five">
+            <i><strong>Wirtschaftliche Auswirkungen:</strong> Die <span class="highlight">Gesundheits-ausgaben</span> steigen aufgrund rauchbedingter Krankheiten.</i>
+        </div>
+        <div class="bar four">
+            <a href="https://251067-4.web.fhgr.ch/step1" class="round-button">Weiter</a>
+        </div>
+        
+    </div>
+</body>
+
+</html>

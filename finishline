@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("commonHead.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+                });
+        });
+    </script>
+
+    <script src="js/finishline.js" defer></script>
+    
+    <link rel="stylesheet" href="css/finishline.css">
+
+</head>
+
+<body>
+
+<header class="global-header">
+    <a href="https://251067-4.web.fhgr.ch/finishline" class="back-link">Kein Zur&uumlck</a>
+</header>
+
+<div class="container">
+    <div id="circle">
+        <a> noch 'ne Kippe? </a>
+    </div>
+</div>
+
+
+</body>

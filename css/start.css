@@ -1,0 +1,153 @@
+/* Standard-Stile für den Body */
+body {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #696969, #000000);
+    background-size: 200% 100%;
+}
+
+i {
+    width: 200px;
+    font-size: 14px;
+}
+
+.highlight {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/* Stil für den Chart-Bereich mit animiertem Gradienten-Hintergrund */
+.chart {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    align-items: center;
+    animation: gradientAnimation 4s ease infinite;
+}
+
+/* Stil für die Balken mit animierter Width und Text in der Mitte */
+.bar {
+    flex: 1;
+    background-color: #000000;
+    position: relative;
+    color: #ffffff;
+    animation: changeWidth 2s infinite alternate;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1px;
+    min-width: 200px;
+}
+
+.bar:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Stil für den runden Button mit animierter Position */
+.round-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #050505;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-button:hover {
+    background-color: rgb(106, 90, 161);
+}
+
+.eight {
+    width: 800px;
+}
+
+.seven {
+    width: 700px;
+}
+
+.six {
+    width: 600px;
+}
+
+.five { 
+    width: 500px;
+}
+
+.four {
+    width: 400px;
+}
+
+/* Keyframes für die Balken-Höhenanimation */
+@keyframes changeWidth {
+    0% {
+        width: -1%;
+    }
+    100% {
+        width: 101%;
+    }
+}
+
+/* Anpassungen für Mobile */
+@media only screen and (max-width: 768px) {
+    i {
+        width: 150px;
+        font-size: 10px;
+    }
+
+    .highlight {
+        font-weight: 100;
+        font-size: 14px;
+    }
+
+    .chart {
+        width: 210px;
+    }
+
+    .bar {
+        margin: 5px;
+    }
+
+    .eight {
+        width: 350px;
+    }
+    
+    .seven {
+        width: 300px;
+    }
+    
+    .six {
+        width: 250px;
+    }
+    
+    .five { 
+        width: 200px;
+    }
+    
+    .four {
+        width: 50px;
+    }
+
+    @keyframes changeWidth {
+        0% {
+            width: -1%;
+        }
+        100% {
+            width: 101%;
+        }
+    }
+}

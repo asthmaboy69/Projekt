@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(167, 167, 167);
+    flex-direction: column;
+    color: white;
+}
+
+.titel {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 4%;
+}
+
+.cigarette {
+    display: flex;
+    justify-content: left;
+    height: 30px;
+    width: 350px;
+    position: relative; /* Position relativ setzen, um den Pseudo-Elementen einzugreifen */
+}
+
+.cigarette::before, .cigarette::after {
+    content: "";
+    position: absolute;
+    border: 2px solid rgb(250, 255, 183);
+    opacity: 0; /* Anfangs unsichtbar */
+    transition: opacity 0.3s ease-in-out; /* Übergangseffekt für den Glow */
+}
+
+.cigarette:hover::before, .cigarette:hover::after {
+    opacity: 1; /* Bei Hover sichtbar machen */
+}
+
+.cigarette::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; /* Glow-Effekt */
+}
+
+.cigarette::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; /* Glow-Effekt */
+}
+
+.filter {
+    width: 30%;
+    background-color: rgb(231, 165, 88);
+}
+
+.tobacco {
+    background-color: azure;
+    width: 70%;
+}
+
+.round-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #050505;
+    position: fixed;
+    bottom: 10px; /* Abstand vom unteren Rand */
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-button:hover {
+    background-color: #ffffff;
+    color: rgb(26, 26, 26);
+}
+
+/* Anpassungen für Mobile */
+@media only screen and (max-width: 768px) {
+    
+    .cigarette {
+        width: 250px;
+    }
+
+    .titel {
+        font-size: 25px;
+    }
+
+}

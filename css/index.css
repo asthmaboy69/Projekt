@@ -1,0 +1,33 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #070707;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    text-align: center;
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 20px;
+    transition: all 0.3s ease; /* Füge eine sanfte Übergangsanimation hinzu */
+    position: absolute;
+    padding: 5px;
+}

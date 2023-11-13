@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("commonHead.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+                });
+        });
+    </script>
+
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <div id="circle">
+            <a href="https://251067-4.web.fhgr.ch/start"> 
+            Kippe?
+            </a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("commonHead.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+                });
+        });
+    </script>
+        <link rel="stylesheet" href="css/step3.css">
+</head>
+
+<body>
+    <header class="global-header">
+        <a href="https://251067-4.web.fhgr.ch/step2" class="back-link">Zur&uumlck</a>
+    </header>
+
+    <h1 class="titel">Deine letzte Zigarette.</h1>
+
+    <div class="cigarette">
+        <div class="filter"></div>
+        <div class="tobacco"></div>
+    </div>
+
+     <script src="js/step3.js"></script>
+
+</body>
+
+</html>
